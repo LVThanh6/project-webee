@@ -293,6 +293,7 @@
 
     .searchbtn {
         z-index: 2;
+        border-radius: 50px;
     }
 
     .search_input::placeholder {
