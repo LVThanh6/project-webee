@@ -35,7 +35,7 @@
     position: relative;
     width: 100%;
     height: 440px;
-    background-image: url(../assets/img/blogs/selection1/bg.jpg);
+    background-image: url(../../assets/img/blogs/selection1/bg.jpg);
     background-size: cover;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .selection1--right {
-    background-image: url(../assets/img/blogs/selection1/image.png);
+    background-image: url(../../assets/img/blogs/selection1/image.png);
     width: 632px;
     height: 438px;
     background-size: cover;

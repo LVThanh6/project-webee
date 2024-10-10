@@ -4,16 +4,16 @@ footer.innerHTML = `
             <div class="wrapper">
                 <div class="logo">
                     <img class="logo__shadow" src="../../assets/img/footer/LogoBlur.png" alt="">
-                    <img class="logo__main" onclick ="document.location.href = 'index.html'" src="../../assets/img/footer/logo.png" alt="">
+                    <img class="logo__main" onclick ="document.location.href = '../../index.html'" src="../../assets/img/footer/logo.png" alt="">
                 </div>
                 <div class="footer__buttons">
                     <div class="buttons--top">
-                        <a  class="button" href="index.html">Trang chủ</a>
-                        <a class="button" href="featured.html">Nổi bật</a>
+                        <a  class="button" href="../../index.html">Trang chủ</a>
+                        <a class="button" href="../featured/featured.html">Nổi bật</a>
                     </div>
                     <div class="buttons--bottom">
-                        <a class="button" href="blog.html">Blog</a>
-                        <a class="button" href="contact.html">Liên hệ</a>
+                        <a class="button" href="../blogs/blogs.html">Blog</a>
+                        <a class="button" href="../contact/contact.html">Liên hệ</a>
                     </div>
                 </div>
                 <div class="contact">

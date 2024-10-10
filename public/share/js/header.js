@@ -2,14 +2,14 @@
 document.querySelector('header').innerHTML = `
             <div class="wrapper">
             <div class="header--left">
-                <img class="header--logo logo" onclick ="document.location.href = 'index.html'" src="../../assets/img/header/Logo.png" alt="Website Logo">
+                <img class="header--logo logo" onclick ="document.location.href = '../../index.html'" src="../../assets/img/header/Logo.png" alt="Website Logo">
             </div>
             <div class="header--right">
                 <ul class="header__nav nav">
-                    <li class="nav__link" id = "link1"><a href="index.html">Trang chủ</a></li>
-                    <li class="nav__link" id = "link2"><a href="featured.html">Nổi bật</a></li>
-                    <li class="nav__link" id = "link3"><a href="blog.html">Blog</a></li>
-                    <li class="nav__link" id = "link4"><a href="contact.html">Liên hệ</a></li>
+                    <li class="nav__link" id = "link1"><a href="../../index.html">Trang chủ</a></li>
+                    <li class="nav__link" id = "link2"><a href="../featured/featured.html">Nổi bật</a></li>
+                    <li class="nav__link" id = "link3"><a href="../blogs/blogs.html">Blog</a></li>
+                    <li class="nav__link" id = "link4"><a href="../contact/contact.html">Liên hệ</a></li>
                 </ul>
                 <div class="header__input">
                     <div class="header__searchbox">
