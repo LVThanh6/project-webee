@@ -77,7 +77,6 @@
     color: #000000;
 
 }
-
 .header__input {
     display: flex;
     align-items: center;
@@ -247,49 +246,9 @@
         height: calc(29 * 4px);
         gap: 1px;
         width: 149px;
-        left: -160px;
+        left: 0px;
         transition: 0.5s;
-    }
-
-    .nav__link {
-        background-color: white;
-        width: 149px;
-        display: block;
-        height: 29px;
-    }
-
-    .nav__link a {
-        font-size: 12px;
-        float: right;
-        width: 90px;
-
-    }
-    #link0{
-        background-color: #FF7F00;
-        height: 52px;
-        display: grid;
-        cursor: initial;
-    }
-    #link0 a {
-        width: 100%;
-        position: relative;
-        font-family: 'Be Vietnam Pro';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
-        color: #FFFFFF;
-        display: flex;
-        justify-content: center;
-    }
-    #link0:hover a {
-        transition: 0.05s;
-        transform: translate(-2px, 0);
-        color: white;
-    }
-    #link0 a::before {
-        content: "-";
-        margin-right: 5px;
+        position: absolute;
     }
 
     .logo {

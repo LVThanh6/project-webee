@@ -450,6 +450,11 @@
     transform: rotate(45deg);
     margin-left: 6px;
 }
+@media screen and (max-width: 100px) {
+    .nav{
+        display: flex;
+    }
+}
 @media screen and (max-width: 1125px) {
     .selection3 .wrapper{
         grid-template-columns: repeat(2, 1fr);
