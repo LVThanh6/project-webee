@@ -18,13 +18,16 @@ footer.innerHTML = `
                 </div>
                 <div class="contact">
                     <label for="" class="contact__title">Liên hệ chúng tôi tại:</label>
-                    <div class="contact__mail">
-                        <img src="../../assets/img/footer/IconMail.png" alt="">
-                        <span>mailexample@gmail.com</span>
-                    </div>
-                    <div class="contact__phone">
-                        <img src="../../assets/img/footer/IconPhone.png" alt="">
-                        <span>+099. 990888223</span>
+                    <div class = "contect_info">
+                        <div class="contact__mail">
+                            <img src="../../assets/img/footer/IconMail.png" alt="">
+                            <span>mailexample@gmail.com</span>
+                        </div>
+                        <br>
+                        <div class="contact__phone">
+                            <img src="../../assets/img/footer/IconPhone.png" alt="">
+                            <span>+099. 990888223</span>
+                        </div>
                     </div>
                 </div>
             </div>
