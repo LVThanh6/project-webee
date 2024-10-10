@@ -251,6 +251,7 @@
 }
 
 .topic__button {
+    cursor: pointer;
     margin-top: 26px;
     display: flex;
     flex-direction: row;
@@ -301,6 +302,7 @@
 }
 
 .selection2 .item {
+    cursor: pointer;
     box-sizing: border-box;
     transition: 0.05s;
     display: flex;
@@ -320,6 +322,7 @@
     border: 1px solid #666666;
 }
 #selection2__item1 {
+    cursor: initial;
     border: none;
     background: #993339;
     color: #FFFFFF;

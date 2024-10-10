@@ -21,7 +21,12 @@
     width: 162.34px;
     height: 50.27px;
     position: relative;
-    transform: translate(0,1px);
+    transform: translate(0, 1px);
+    cursor: pointer;
+}
+
+.header--left svg {
+    display: none;
 }
 
 .header--right {
@@ -29,6 +34,10 @@
     align-items: center;
     gap: 177.82px;
     transition: 0.2s;
+}
+
+.header--right svg {
+    display: none;
 }
 
 .nav {
@@ -45,11 +54,13 @@
     display: inline-flex;
     height: 32px;
 }
-.nav__link:hover a{
+
+.nav__link:hover a {
     transition: 0.05s;
-    transform: translate(-2px,2px);
+    transform: translate(-2px, 2px);
     color: #FE7F00;
 }
+
 .nav__link a {
     margin: auto;
     text-decoration: none;
@@ -86,9 +97,11 @@
     border-radius: 50px;
     transition: 0.2s;
 }
+
 .searchbox__input:hover::placeholder {
     color: #FFFFFF;
 }
+
 .header__searchbox * {
     height: 100%;
 }
@@ -116,6 +129,7 @@
     background-color: transparent;
     border: 2px solid black;
 }
+
 .searchbox__input::placeholder {
     color: #000000;
 }
@@ -145,6 +159,7 @@
     width: 38.54px;
     height: 38.21px;
 }
+
 .login__img1 {
     position: absolute;
     left: 50%;
@@ -156,12 +171,14 @@
     z-index: 1;
     padding: 10px;
 }
+
 .login__img1:hover {
     transition: 0.2s;
     background: transparent;
     opacity: 0;
     cursor: pointer;
 }
+
 .login__img2 {
     position: absolute;
     left: 50%;
@@ -169,4 +186,164 @@
     transform: translate(-50%, -50%);
     width: calc(100% + 9.5px);
     height: calc(100% + 9.5px);
+}
+
+.search_bar {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    width: 365px;
+    height: 106px;
+    background-image: url(../../assets/img/header/SeachBar_.png);
+    background-size: cover;
+    right: 45px;
+    z-index: -1;
+    transition: 0;
+    top: -1000px;
+}
+
+@media screen and (max-width: 1100px) {
+    .nav {
+        gap: 38.78px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+    }
+
+    .header--right {
+        gap: 23.85;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .header--left {
+        display: flex;
+        align-items: center;
+    }
+
+    .header--left svg,
+    .header--right svg {
+        display: absolute;
+        top: 50%;
+        display: initial;
+        cursor: pointer;
+    }
+
+    .header--left:active svg path {
+        fill: #E48036;
+    }
+
+    .header__input {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        display: none;
+        left: 0;
+        top: 64px;
+        transform: translateX(0px);
+        height: calc(29 * 4px);
+        gap: 1px;
+        width: 149px;
+        left: -160px;
+        transition: 0.5s;
+    }
+
+    .nav__link {
+        background-color: white;
+        width: 149px;
+        display: block;
+        height: 29px;
+    }
+
+    .nav__link a {
+        font-size: 12px;
+        float: right;
+        width: 90px;
+
+    }
+    #link0{
+        background-color: #FF7F00;
+        height: 52px;
+        display: grid;
+        cursor: initial;
+    }
+    #link0 a {
+        width: 100%;
+        position: relative;
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    #link0:hover a {
+        transition: 0.05s;
+        transform: translate(-2px, 0);
+        color: white;
+    }
+    #link0 a::before {
+        content: "-";
+        margin-right: 5px;
+    }
+
+    .logo {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    .search_bar {
+        position: absolute;
+        display: none;
+        opacity: 0;
+        width: 365px;
+        height: 106px;
+        background-image: url(../../assets/img/header/SeachBar_.png);
+        background-size: cover;
+        top: 6px;
+        right: 45px;
+        z-index: -1;
+    }
+
+    .search_input {
+        outline: none;
+        box-sizing: border-box;
+        border: none;
+        background: transparent;
+        height: 40px;
+        width: 280px;
+        margin-top: 62px;
+        margin-left: 20px;
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        outline: none;
+    }
+
+    .searchbtn {
+        z-index: 2;
+    }
+
+    .search_input::placeholder {
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
 }
