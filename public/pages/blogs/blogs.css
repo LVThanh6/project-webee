@@ -279,6 +279,12 @@
     width: 600.5px;
     margin-right: 20px;
 }
+@media screen and (max-width: 1250px) {
+    .topic-right{
+        width: 60%;
+        height: 217.81px;
+    }
+}
 
 /* selection 2 */
 .selection2 {
