@@ -9,11 +9,11 @@ footer.innerHTML = `
                 <div class="footer__buttons">
                     <div class="buttons--top">
                         <a  class="button" href="../../index.html">Trang chủ</a>
-                        <a class="button" href="../page/featured/featured.html">Nổi bật</a>
+                        <a class="button" href="../pages/featured/featured.html">Nổi bật</a>
                     </div>
                     <div class="buttons--bottom">
-                        <a class="button" href="../page/blogs/blogs.html">Blog</a>
-                        <a class="button" href="../page/contact/contact.html">Liên hệ</a>
+                        <a class="button" href="../pages/blogs/blogs.html">Blog</a>
+                        <a class="button" href="../pages/contact/contact.html">Liên hệ</a>
                     </div>
                 </div>
                 <div class="contact">
