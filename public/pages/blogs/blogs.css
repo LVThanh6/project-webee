@@ -408,8 +408,12 @@
     color: #C2000C;
 }
 
-.selection3 .item__date .item__button img {
-    width: 7.41px;
-    height: 12px;
-    margin-left: 9px;
+.selection3 .item__date .item__button div {
+    width: 6px;
+    height: 6px;
+    border:  2.5px solid #C2000C;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(45deg);
+    margin-left: 6px;
 }
