@@ -456,6 +456,9 @@
     }
 }
 @media screen and (max-width: 1125px) {
+    .selection1__title{
+        display: inline;
+    }
     .selection3 .wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
