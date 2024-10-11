@@ -292,7 +292,7 @@ a {
         background-size: 100% 100%;
     }
     .footer .footer__container .wrapper {
-        width: calc(100% - 120px);
+        width: calc(100% - 10vw);
     }
     .footer .logo {
         width: 200px;
