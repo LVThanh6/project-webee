@@ -320,4 +320,7 @@ a {
     .footer .contact__phone {
         font-size: 10px;
     }
+    .footer .footer__copyright{
+        font-size: 14px;
+    }
 }
