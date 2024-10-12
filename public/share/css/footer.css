@@ -161,7 +161,7 @@ a {
         left: 50%;
     }
 }
-@media screen and (max-width: 1190px) {
+/* @media screen and (max-width: 1190px) {
     .footer .footer__container .wrapper {
         width: calc(100% - 170*2px);
     }
@@ -323,4 +323,4 @@ a {
     .footer .footer__copyright{
         font-size: 14px;
     }
-}
+} */
