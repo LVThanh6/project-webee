@@ -1,4 +1,5 @@
 .header {
+    min-width: 1440px;
     position: fixed;
     top: 0;
     display: flex;
