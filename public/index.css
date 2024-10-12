@@ -205,9 +205,24 @@
 .selection2 #item2__img{
     width: 100px;
 }
-.selection2 .item:hover .circle{
+.selection2 .circle_{
+    position: absolute;
+    top: 61.5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.selection2 .circle{
+    width: 155px;
+    height: 155px;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.selection2 .item:hover .circle_{
     animation: rotate 1s linear infinite;
-    left: calc(27%);
+    position: absolute;
+    left: 0;
 }
 @keyframes rotate {
     0% {
@@ -216,17 +231,6 @@
     100% {
         transform: rotate(-360deg);
     }
-}
-.selection2 .circle{
-    position: absolute;
-    transform: translate(-50%);
-    top: 60px;
-    left: calc(50% - 1px);
-    width: 155px;
-    height: 155px;
-    box-sizing: border-box;
-    border: 4px solid white;
-    border-radius: 50%;
 }
 .point_white{
     position: relative;
