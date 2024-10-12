@@ -96,20 +96,20 @@ a {
     padding-top: 10px;
 }
 
-.contact {
+.footer .contact {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
     transform: translate(0, 5px);
 }
 
-.contact * {
+.footer .contact * {
     display: inline-block;
     display: flex;
     align-items: center;
 }
 
-.contact__title {
+.footer .contact__title {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;

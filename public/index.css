@@ -194,7 +194,7 @@
 .selection2 .item:hover{
     transform: translate(0, -20px);
     border: 4px solid white;
-    background: linear-gradient(171.54deg, #FF730F 21.38%, #C2000C 95.84%);
+    background: linear-gradient(171.54deg, RGB(255, 115, 15, 1) 21.38%, RGB(194, 0, 12, 0.9) 95.84%);
 }
 .selection2 .item:hover .item__title{
     color: white;

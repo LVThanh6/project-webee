@@ -1,5 +1,5 @@
 // load header
-document.querySelector('header').innerHTML = `
+document.querySelector('header').innerHTML += `
             <div class="wrapper">
             <div class="header--left">
                 <svg class = "btn_menu" width="41" height="26" viewBox="0 0 41 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ document.querySelector('header').innerHTML = `
                         </div>
                         <input class="searchbox__input" type="text" placeholder="Tìm kiếm">
                     </div>
-                    <button class="header__login">
+                    <button class="header__login" popovertarget = "sign-in__form">
                             <img class="login__img1" src="../../assets/img/header/Property 1=Login_Default.png" alt="Login Button">
                             <img class="login__img2" src="../../assets/img/header/Property 1=Login_hover.png" alt="Login Button">
                     </button>

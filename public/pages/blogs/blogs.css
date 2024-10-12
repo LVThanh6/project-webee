@@ -455,6 +455,63 @@
     transform: rotate(45deg);
     margin-left: 6px;
 }
+/* pagigation */
+.pagigation{
+    width: 100%;
+    min-width: 1440px;
+}
+.pagigation .wrapper{
+    width: calc(100% - 104px*2);
+    margin: auto;
+    display: flex;
+    text-align: right;
+    position: relative;
+}
+.pagigation-btn{
+    position: absolute;
+    right: 0;
+}
+.pagigation-btn .page-icon {
+    width: 32px; height: 32px;
+    color: #fff;
+    font-size: 12px;
+    background: rgba(194, 0, 12, 0.5);
+    border-radius: 4px;
+    border: 1.5px solid #E48D8C;
+}
+
+.pagigation-btn .page-icon:hover {
+    background: rgba(194, 0, 12, 1);
+    cursor: pointer;
+    border: 1.5px solid rgba(194, 0, 12, 1);
+}
+
+.pagigation-btn .page-btn {
+    margin-left: 4px; margin-right: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 32px; height: 32px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    border: 1.5px solid rgba(235, 235, 235, 1);
+    margin-bottom: 36px;
+}
+
+.pagigation-btn .page-btn:hover {
+    color: rgba(194, 0, 12, 1);
+    border: 2px solid rgba(194, 0, 12, 1);
+    cursor: pointer;
+}
+
+.pagigation-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+}
+.footer{
+    margin-top: 35px;
+}
 /* @media screen and (max-width: 100px) {
     .nav{
         display: flex;
