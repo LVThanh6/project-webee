@@ -143,7 +143,11 @@ content .contact{
     letter-spacing: 0.01em;
     color: #3B3B3B;
 }
-
+.contact__label::after {
+    content: '*';
+    margin-left: 5px;
+    color: #FF0000;
+}
 .contact__input {
     bottom: 0px;
     position: absolute;
@@ -164,6 +168,7 @@ content .contact{
 }
 
 .contact__button {
+    cursor: pointer;
     margin-top: 17px;
     display: flex;
     flex-direction: row;
