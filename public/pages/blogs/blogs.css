@@ -209,17 +209,17 @@
 /* topic */
 .topic {
     min-width: 1440px;
-    padding: 20px 0;
-    width: calc(100% - 104px*2);
-    margin: auto;
-    border: 2px solid #EBEBEB;
-    box-shadow: 0px 8px 24px 0px #0000000D;
-    width: Fill (1, 233px)px;
-    border-radius: 24px;
+    width: 100%;
 }
 
 .topic .wrapper {
-    width: 100%;
+    box-sizing: borde;
+    border-radius: 24px;
+    box-shadow: 0px 8px 24px 0px #0000000D;
+    margin: auto;
+    padding : 20px;
+    border: 2px solid #EBEBEB;
+    width: calc(100% - 104px*2);
     position: relative;
     display: flex;
     justify-content: space-between;
