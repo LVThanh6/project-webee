@@ -137,7 +137,6 @@
     width: 100%;
     justify-content: center;
 }
-
 .selection2__titlebox {
     text-align: center;
     width: 100%;
@@ -179,9 +178,12 @@
     display: flex;
     width: calc(100% - 240px);
     gap: 16px;
+    margin-top: 18px;
 }
-
 .selection2 .item {
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
     width: calc((100% - 48px) / 4);
     height: 516px;
     background: linear-gradient(#FFFFFF 0 0) padding-box, linear-gradient(180deg, #EE4C56, #F57F20) border-box;
@@ -189,7 +191,53 @@
     border-radius: 15px;
     text-align: center;
 }
-
+.selection2 .item:hover{
+    transform: translate(0, -20px);
+    border: 4px solid white;
+    background: linear-gradient(171.54deg, #FF730F 21.38%, #C2000C 95.84%);
+}
+.selection2 .item:hover .item__title{
+    color: white;
+}
+.selection2 .item:hover .item__comment{
+    color: white;
+}
+.selection2 #item2__img{
+    width: 100px;
+}
+.selection2 .item:hover .circle{
+    animation: rotate 1s linear infinite;
+    left: calc(27%);
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.selection2 .circle{
+    position: absolute;
+    transform: translate(-50%);
+    top: 60px;
+    left: calc(50% - 1px);
+    width: 155px;
+    height: 155px;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.point_white{
+    position: relative;
+    border:8px solid white;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: -2px;
+    left: 50%;
+}
 .item__title {
     font-family: 'Inter';
     font-style: normal;
@@ -259,33 +307,60 @@
 
 .selection3 .item {
     display: inline;
-    border: 2px solid #000;
     border-radius: 25px;
     position: relative;
 }
-
+.selection3 .item .div{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.selection3 .item:hover img {
+    transition: 0.5s;
+    transform: scale(1.2,1.2);
+}
 .selection3 .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 25px;
 }
-
+.selection3 .item:hover label{
+    transition: 0.5s;
+    color: transparent;
+}
 .selection3 .item label {
-    margin-top: 5px;
+    background: linear-gradient(81.6deg, #C82E0E 30%, #FF7F00 80%);
+    background-clip: text;
+    margin-top: 15px;
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    width: 120%;
+    width: 100%;
     display: block;
     font-family: 'Be Vietnam Pro';
     font-size: 18px;
     font-weight: 700;
     line-height: 22.77px;
     text-align: center;
-    color: #333;
+    color: black;
 }
-
+.selection3 .item:hover .underline{
+    opacity: 1;
+    transition: 0.5s;
+    width: 100%;
+}
+.selection3 label .underline{
+    opacity: 0;
+    top: 10px;
+    width:  0%;
+    position: relative;
+    height: 0px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    padding: 0;
+    margin: 0;
+}
 /* selection 4 */
 .selection4 {
     margin-top: 100px;
