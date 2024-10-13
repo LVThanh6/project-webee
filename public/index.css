@@ -63,7 +63,7 @@
 }
 
 .selection1 .wrapper {
-    width: calc(100% - 240px);
+    width: calc(100% - 104px*2);
     margin: auto;
     display: flex;
     position: relative;
@@ -176,7 +176,7 @@
 .selection2 .wrapper {
     margin: auto;
     display: flex;
-    width: calc(100% - 240px);
+    width: calc(100% - 104px*2);
     gap: 16px;
     margin-top: 18px;
 }
@@ -303,7 +303,7 @@
 .selection3 .wrapper {
     padding-top: 40px;
     margin: auto;
-    width: calc(100% - 322px);
+    width: calc(100% - 104px*2);
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 100.67px;
@@ -398,7 +398,7 @@
 .selection4 .wrapper {
     padding-top: 40px;
     margin: auto;
-    width: calc(100% - 242px);
+    width: calc(100% - 104px*2);
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr 1fr;
     gap: 138px;
@@ -451,7 +451,7 @@
 .selection5 .wrapper {
     padding-top: 30px;
     margin: auto;
-    width: calc(100% - 242px);
+    width: calc(100% - 104px*2);
     display: flex;
     gap: 60px;
 }
@@ -572,7 +572,7 @@
 
 .footer__container .wrapper {
     position: relative;
-    width: calc(100% - 240px);
+    width: calc(100% - 104px*2);
     margin: auto;
     display: flex;
     justify-content: space-between;
