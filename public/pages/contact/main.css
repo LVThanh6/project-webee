@@ -193,3 +193,82 @@ content .contact{
 .footer{
     margin-top: 35px;
 }
+.contact-container {
+    margin-left: 64px;
+    width: 632px;
+    height: 750px;
+    background-color: white;
+    position: relative;
+}
+
+.contact--main-office,
+.contact--brand-office {
+    margin-left: 40px;
+    position: absolute;
+}
+
+.contact--main-office {
+    top: 66px;
+}
+
+.contact--brand-office {
+    bottom: 66px;
+}
+
+.contact__info--location,
+.contact__info--phone,
+.contact__info--email,
+.contact__info--fax {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+content .contact .contact-container .contact__title {
+    width: 534px;
+    height: 96px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #AA3028;
+    margin-bottom: 0px;
+}
+
+.contact--more {
+    display: flex;
+}
+
+.contact__square {
+    width: 24px;
+    height: 24px;
+    background: #F04438;
+    margin-top: 12px;
+    margin-right: 35px;
+}
+
+.contact__info-icon {
+    height: 24px;
+    height: 24px;
+    margin-right: 13px;
+}
+
+.contact__info--phone {
+    height: calc(24*3px);
+    line-height: 24px;
+}
+
+.contact__info--phone .contact__info-icon {
+    transform: translateY(-24px);
+}
+
+.contact__info * {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
