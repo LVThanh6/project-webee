@@ -81,7 +81,7 @@ searchbox__input.addEventListener('mouseleave', function () {
         searchbox__input.style.right = "initial"
         setTimeout(() => {
             console.log("run")
-            document.querySelector(".header__searchbox").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
+            document.querySelector(".searchbox__input").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
             searchbox__input.style.setProperty('--placeholder-color', 'black');
 
         }, 1);
@@ -122,7 +122,7 @@ searchbox__input.addEventListener('blur', function () {
         searchbox__input.style.right = "initial"
         setTimeout(() => {
             console.log("run")
-            document.querySelector(".header__searchbox").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
+            document.querySelector(".searchbox__input").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
             searchbox__input.style.setProperty('--placeholder-color', 'black');
         }, 1);
     }
