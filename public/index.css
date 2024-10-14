@@ -123,7 +123,6 @@
     transition: 0.5s;
 }
 .selection1__button:hover{
-    transition: 0.5s;
     background: linear-gradient(-10deg, #D62B08 0%, #F57F20 100%);
 }
 .selection1--right {

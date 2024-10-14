@@ -273,10 +273,10 @@
     align-items: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
+    transform: 0.05s;
 }
 .topic__button:hover{
-    transform: 0.05s;
-    background: #2B367B;
+    background: linear-gradient(-10deg, #D62B08 0%, #F57F20 100%);
 }
 
 .topic-right {

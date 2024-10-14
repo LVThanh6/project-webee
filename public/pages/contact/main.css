@@ -189,10 +189,10 @@ content .contact{
     align-items: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
+    transition: 0.5s;
 }
 .contact__button:hover{
-    transform: 0.05s;
-    background: #2B367B;
+    background: linear-gradient(-10deg, #D62B08 0%, #F57F20 100%);
 }
 .footer{
     margin-top: 35px;
