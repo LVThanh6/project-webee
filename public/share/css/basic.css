@@ -18,8 +18,8 @@ body{
 content{
     position: relative;
 }
-/* Hide scrollbar */
-::-webkit-scrollbar {
+Hide scrollbar
+body::-webkit-scrollbar {
     display: none;
 }
 

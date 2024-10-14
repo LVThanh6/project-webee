@@ -17,7 +17,7 @@ document.querySelector('header').innerHTML += `
                 </div>
                 <ul class="header__nav nav" id = "nav">
                     <li class="nav__link" id = "link1"><a href="../../index.html">Trang chủ</a></li>
-                    <li class="nav__link" id = "link2"><a href="../../pages/featured/featured.html">Nổi bật</a></li>
+                    <li class="nav__link" id = "link2"><a href="../../pages/club/club.html">Clubs</a></li>
                     <li class="nav__link" id = "link3"><a href="../../pages/blogs/blogs.html">Blog</a></li>
                     <li class="nav__link" id = "link4"><a href="../../pages/contact/contact.html">Liên hệ</a></li>
                 </ul>

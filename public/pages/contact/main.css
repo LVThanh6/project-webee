@@ -190,6 +190,10 @@ content .contact{
     letter-spacing: 0.015em;
     color: #FFFFFF;
 }
+.contact__button:hover{
+    transform: 0.05s;
+    background: #2B367B;
+}
 .footer{
     margin-top: 35px;
 }
@@ -260,10 +264,12 @@ content .contact .contact-container .contact__title {
     line-height: 24px;
 }
 
-.contact__info--phone .contact__info-icon {
+.contact__info--phone .contact__info-icon , .contact__info--phone-title{
     transform: translateY(-24px);
 }
-
+.contact__info--phone-title{
+    margin-right: 5px;
+}
 .contact__info * {
     font-family: "Roboto";
     font-size: 16px;
