@@ -26,26 +26,30 @@
             </div>
         </div>
         <div class="contact">
-            <form class="contact__form">
+            <form id="contact__form" class="contact__form">
                 <h2 class="contact__title">Liên hệ với chúng tôi</h2>
                 <div class="contact__form-group">
                     <label class="contact__label" for="name">Họ và tên</label><br>
-                    <input class="contact__input" type="text" id="name" name="name" placeholder="Placeholder" required>
+                    <input class="contact__input" type="text" id="name" name="name" placeholder="Placeholder">
+                    <span id="nameError" class="error-message"></span>
                 </div>
                 <div class="contact__form-group">
                     <label class="contact__label" for="email">Email:</label><br>
-                    <input class="contact__input" type="email" id="email" name="email" placeholder="Placeholder" required>
+                    <input class="contact__input" type="email" id="email" name="email" placeholder="Placeholder">
+                    <span id="emailError" class="error-message"></span>
                 </div>
                 <div class="contact__form-group">
-                    <label class="contact__label" for="number">Số điện thoại</label><br>
-                    <input class="contact__input" type="number" id="number" name="number" placeholder="Placeholder" required>
+                    <label class="contact__label" for="phone">Số điện thoại</label><br>
+                    <input class="contact__input" type="tel" id="phone" name="phone" placeholder="Placeholder">
+                    <span id="phoneError" class="error-message"></span>
                 </div>
                 <div class="contact__form-group">
-                    <label class="contact__label" for="phone">Nội dung</label><br>
-                    <input class="contact__input" type="tel" id="phone" name="phone" placeholder="Mô tả" required>
+                    <label class="contact__label" for="container">Nội dung</label><br>
+                    <input class="contact__input" type="text" id="contai" name="conta" placeholder="Mô tả">
+                    <span id="contaiError" class="error-message"></span>
                 </div>
-                <button class="contact__button" type="submit">SEND MESSENGER</button>
-            </form>
+                <button class="contact__button send" type="submit">SEND MESSENGER</button>
+            </form>            
             <div class="contact-container">
                 <div class="contact--main-office">
                     <h2 class="contact__title">Trụ sở chính: Trường Đại Học Công Nghiệp TP.Hồ Chí Minh</h2>
@@ -109,6 +113,7 @@
         </div>
     </content>
     <footer class="footer"></footer>
+    <script src="main.js"></script>
     <script src="../../share/js/header.js"></script>
     <script src="../../share/js/footer.js"></script>
     </div>

@@ -152,9 +152,7 @@ content .contact{
     bottom: 0px;
     position: absolute;
     box-sizing: border-box;
-    padding: 0px;
-    gap: 8px;
-    width: 429.5px;
+    width: 100%;
     padding: 16px;
     border: 1px solid #B0B0B0;
     border-radius: 4px;
@@ -277,4 +275,36 @@ content .contact .contact-container .contact__title {
     line-height: 24px;
     letter-spacing: 0.01em;
     text-align: left;
+}
+
+
+
+
+.contact__form {
+    border: 2px solid transparent;
+    border-width: 10px;
+    box-sizing: border-box;
+}
+.contact__form.contact__form-valid {
+    border-color: #5DCC15;
+    border-width: 10px;
+}
+.contact__form.contact__form-invalid {
+    border-color: #C2000C;
+    border-width: 10px;
+}
+.error-message {
+    color: #C2000C;
+    display: none;
+}
+.error-message.show {
+    display: block;
+}
+.send-valid {
+    background-color: #5DCC15;
+    color: white;
+}
+.send-invalid {
+    background-color: #C2000C;
+    color: white;
 }

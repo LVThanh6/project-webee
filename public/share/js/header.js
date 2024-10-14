@@ -124,26 +124,3 @@ searchbox__input.addEventListener('blur', function () {
         }, 1);
     }
 });
-
-const searchbtn = document.querySelector(".searchbtn");
-const search_bar = document.querySelector(".search_bar");
-search_bar.style.display = "none";
-let show_search_input = false;
-
-searchbtn.addEventListener('click', function () {
-    if (show_search_input) {
-        show_search_input = false;
-        search_bar.style.opacity = "0";
-        setTimeout(() => {
-            search_bar.style.display = "none";
-        }, 100);
-    } else {
-        show_search_input = true;
-        search_bar.style.display = "initial";
-        setTimeout(() => {
-            search_bar.style.transition = "0.05s";
-            search_bar.style.opacity = "1";
-        }, 100);
-    }
-    console.log(show_search_input);
-});
