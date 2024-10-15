@@ -455,6 +455,11 @@
     transform: rotate(45deg);
     margin-left: 6px;
 }
+
+.selection3 .item__date .item__button a{
+    color: #C2000C;
+}
+
 /* pagigation */
 .pagigation{
     width: 100%;
