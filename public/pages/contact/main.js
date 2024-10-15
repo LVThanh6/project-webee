@@ -5,7 +5,7 @@ document.querySelector('#contact__form').addEventListener('submit', function(eve
     const sendButton = document.querySelector('.send'); 
     const sendContainer = document.querySelector('.contact__form');
 
-    sendButton.classList.remove('send-valid', 'send-invalid');
+    sendButton.classList.remove('send-valid', 'send-invalid', 'no-hover');
     sendContainer.classList.remove('contact__form-valid', 'contact__form-invalid');
 
     const name = document.getElementById('name');
@@ -55,14 +55,19 @@ document.querySelector('#contact__form').addEventListener('submit', function(eve
     }
 
     if (valid) {
-        sendButton.classList.add('send-valid');  
+        sendButton.classList.add('send-valid', 'no-hover');  
         sendContainer.classList.add('contact__form-valid');  
+
+        setTimeout(() => {
+            sendButton.classList.remove('send-valid', 'no-hover');
+            sendContainer.classList.remove('contact__form-valid');
+        }, 2000);
     } else {
-        sendButton.classList.add('send-invalid'); 
+        sendButton.classList.add('send-invalid', 'no-hover'); 
         sendContainer.classList.add('contact__form-invalid');  
 
         setTimeout(() => {
-            sendButton.classList.remove('send-invalid');
+            sendButton.classList.remove('send-invalid', 'no-hover');
             sendContainer.classList.remove('contact__form-invalid');
         }, 2000);
     }

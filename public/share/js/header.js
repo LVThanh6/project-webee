@@ -14,7 +14,6 @@ document.querySelector('header').innerHTML += `
                 </svg>
                 <ul class="header__nav nav" id = "nav">
                     <li class="nav__link" id = "link1"><a href="../../index.html">Trang chủ</a></li>
-                    <li class="nav__link" id = "link2"><a href="../../pages/club/club.html">Clubs</a></li>
                     <li class="nav__link" id = "link3"><a href="../../pages/blogs/blogs.html">Blog</a></li>
                     <li class="nav__link" id = "link4"><a href="../../pages/contact/contact.html">Liên hệ</a></li>
                 </ul>
@@ -31,6 +30,32 @@ document.querySelector('header').innerHTML += `
                     </button>
                 </div>
             </div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="login-form" class="form">
+            <div class="form-header">
+                <button id="show-login" class="switch-btn active">Đăng nhập</button>
+                <button id="show-register" class="switch-btn">Đăng ký</button>
+            </div>
+            <img src="path/to/login-logo.png" alt="Đăng nhập" class="form-logo">
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button class="submit-btn">Đăng nhập</button>
+        </div>
+        <div id="register-form" class="form" style="display: none;">
+            <div class="form-header">
+                <button id="show-login" class="switch-btn">Đăng nhập</button>
+                <button id="show-register" class="switch-btn active">Đăng ký</button>
+            </div>
+            <img src="path/to/register-logo.png" alt="Đăng ký" class="form-logo">
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button class="submit-btn">Đăng ký</button>
+        </div>
+    </div>
+</div>
         </div>
         <style>
             .searchbox__input::placeholder {
@@ -122,5 +147,55 @@ searchbox__input.addEventListener('blur', function () {
             document.querySelector(".searchbox__input").style.background = "linear-gradient(to right, #FFFFFF 10%,#FFFFFF 80%)"
             searchbox__input.style.setProperty('--placeholder-color', 'black');
         }, 1);
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const loginButton = document.querySelector('.header__login');
+    const closeButton = document.querySelector('.close');
+    const showRegisterButtons = document.querySelectorAll('#show-register');
+    const showLoginButtons = document.querySelectorAll('#show-login');
+
+    loginButton.addEventListener('click', function() {
+        modal.style.display = 'block';
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+    });
+
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    showRegisterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+            setActiveButton(button);
+        });
+    });
+
+    showLoginButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            loginForm.style.display = 'block';
+            registerForm.style.display = 'none';
+            setActiveButton(button);
+        });
+    });
+
+    function setActiveButton(activeButton) {
+        document.querySelectorAll('.switch-btn').forEach(button => {
+            button.classList.remove('active');
+        });
+        activeButton.classList.add('active');
     }
 });

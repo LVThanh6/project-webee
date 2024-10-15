@@ -269,7 +269,8 @@ content .contact .contact-container .contact__title {
     line-height: 24px;
 }
 
-.contact__info--phone .contact__info-icon, .contact__info--phone-title {
+.contact__info--phone .contact__info-icon,
+.contact__info--phone-title {
     transform: translateY(-24px);
 }
 
@@ -287,26 +288,40 @@ content .contact .contact-container .contact__title {
 }
 
 .contact__form {
+    position: relative;
     border: 10px solid transparent;
     box-sizing: border-box;
     border-radius: 20px;
-    background-clip: padding-box;
 }
 
 .contact__form.contact__form-valid {
-    border: 10px solid;
-    border-image-source: linear-gradient(224.53deg, #3BD914 15.73%, #1F730B 72.71%);
-    border-image-slice: 1;
-    border-radius: 20px;
-    background-clip: padding-box; /* Ensure background clips to rounded corners */
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box,
+        linear-gradient(224.53deg, #3BD914 15.73%, #1F730B 72.71%) border-box;
+    border: 10px solid transparent;
 }
 
 .contact__form.contact__form-invalid {
-    border: 10px solid;
-    border-image-source: linear-gradient(206.69deg, #EE4C56 4.74%, #990000 91.31%);
-    border-image-slice: 1;
-    border-radius: 20px;
-    background-clip: padding-box; /* Ensure background clips to rounded corners */
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box,
+        linear-gradient(206.69deg, #EE4C56 4.74%, #990000 91.31%) border-box;
+    border: 10px solid transparent;
+}
+
+.send-valid {
+    background: linear-gradient(68.88deg, #008F57 30.06%, #5DCC15 75.12%);
+    color: white;
+}
+
+.send-invalid {
+    background: linear-gradient(84.92deg, #C2000C 5.82%, rgba(244, 73, 73, 0.65) 92.47%);
+    color: white;
+}
+
+.no-hover.send-valid:hover {
+    background: linear-gradient(68.88deg, #008F57 30.06%, #5DCC15 75.12%);
+}
+
+.no-hover.send-invalid:hover {
+    background: linear-gradient(84.92deg, #C2000C 5.82%, rgba(244, 73, 73, 0.65) 92.47%);
 }
 
 .invalid-placeholder::placeholder {
