@@ -54,7 +54,7 @@
 /* selection 1 */
 .selection1 {
     box-sizing: border-box;
-    padding-top: 125px;
+    padding-top: 155px;
     position: relative;
     width: 100%;
     height: 504px;
@@ -132,7 +132,7 @@
     background-size: cover;
     position: absolute;
     right: 0;
-    transform: translate(96px, -130.5px);
+    transform: translate(96px, -150.5px);
 }
 
 /* selection2 */
