@@ -29,7 +29,7 @@ club_cards.forEach(club_card => {
     // Kiểm tra nếu có số X hợp lệ
     if (clubNumber) {
       // Cập nhật hình ảnh trong club_details__image
-      const imageSrc = `../../assets/img/club/list_clubs/img (${clubNumber}).jpg`;
+      const imageSrc = `../../assets/img/club/list_clubs/img (${clubNumber}).png`;
       clubDetailsImage.setAttribute('src', imageSrc);  // Cập nhật hình ảnh
     }
 
