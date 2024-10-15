@@ -20,42 +20,15 @@ document.querySelector('header').innerHTML += `
                 <div class="header__input">
                     <div class="header__searchbox">
                         <div class="searchbox__button">
-                            <img class="searchbox__img" src="../../assets/img/header/icons8-search-144.png" alt="Search Icon">
+                            <button class="header__login" popovertarget = "sign-in__form">
+                                <img class="login__img1" src="../../assets/img/header/Property 1=Login_Default.png" alt="Login Button">
+                                <img class="login__img2" src="../../assets/img/header/Property 1=Login_hover.png" alt="Login Button">
+                            </button>
                         </div>
-                        <input class="searchbox__input" type="text" placeholder="Tìm kiếm">
+                        <input class="searchbox__input" type="text" placeholder="Đăng nhập">
                     </div>
-                    <button class="header__login" popovertarget = "sign-in__form">
-                            <img class="login__img1" src="../../assets/img/header/Property 1=Login_Default.png" alt="Login Button">
-                            <img class="login__img2" src="../../assets/img/header/Property 1=Login_hover.png" alt="Login Button">
-                    </button>
                 </div>
             </div>
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="login-form" class="form">
-            <div class="form-header">
-                <button id="show-login" class="switch-btn active">Đăng nhập</button>
-                <button id="show-register" class="switch-btn">Đăng ký</button>
-            </div>
-            <img src="path/to/login-logo.png" alt="Đăng nhập" class="form-logo">
-            <input type="text" placeholder="Tên đăng nhập" required>
-            <input type="password" placeholder="Mật khẩu" required>
-            <button class="submit-btn">Đăng nhập</button>
-        </div>
-        <div id="register-form" class="form" style="display: none;">
-            <div class="form-header">
-                <button id="show-login" class="switch-btn">Đăng nhập</button>
-                <button id="show-register" class="switch-btn active">Đăng ký</button>
-            </div>
-            <img src="path/to/register-logo.png" alt="Đăng ký" class="form-logo">
-            <input type="text" placeholder="Tên đăng nhập" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Mật khẩu" required>
-            <button class="submit-btn">Đăng ký</button>
-        </div>
-    </div>
-</div>
         </div>
         <style>
             .searchbox__input::placeholder {
@@ -150,52 +123,3 @@ searchbox__input.addEventListener('blur', function () {
     }
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('modal');
-    const loginForm = document.getElementById('login-form');
-    const registerForm = document.getElementById('register-form');
-    const loginButton = document.querySelector('.header__login');
-    const closeButton = document.querySelector('.close');
-    const showRegisterButtons = document.querySelectorAll('#show-register');
-    const showLoginButtons = document.querySelectorAll('#show-login');
-
-    loginButton.addEventListener('click', function() {
-        modal.style.display = 'block';
-        loginForm.style.display = 'block';
-        registerForm.style.display = 'none';
-    });
-
-    closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-    showRegisterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            loginForm.style.display = 'none';
-            registerForm.style.display = 'block';
-            setActiveButton(button);
-        });
-    });
-
-    showLoginButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            loginForm.style.display = 'block';
-            registerForm.style.display = 'none';
-            setActiveButton(button);
-        });
-    });
-
-    function setActiveButton(activeButton) {
-        document.querySelectorAll('.switch-btn').forEach(button => {
-            button.classList.remove('active');
-        });
-        activeButton.classList.add('active');
-    }
-});
