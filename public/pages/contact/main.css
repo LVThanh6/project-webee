@@ -97,13 +97,15 @@
     margin-top: 30px;
     transform: translate(9px, -90px);
 }
+
 /* contact */
-content .contact{
+content .contact {
     margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .contact__form {
     box-shadow: 0px 0px 40px 0px #00000014;
     display: inline-block;
@@ -143,11 +145,13 @@ content .contact{
     letter-spacing: 0.01em;
     color: #3B3B3B;
 }
+
 .contact__label::after {
     content: '*';
     margin-left: 5px;
     color: #FF0000;
 }
+
 .contact__input {
     bottom: 0px;
     position: absolute;
@@ -189,12 +193,15 @@ content .contact{
     color: #FFFFFF;
     transition: 0.5s;
 }
-.contact__button:hover{
+
+.contact__button:hover {
     background: linear-gradient(-10deg, #D62B08 0%, #F57F20 100%);
 }
-.footer{
+
+.footer {
     margin-top: 35px;
 }
+
 .contact-container {
     margin-left: 64px;
     width: 632px;
@@ -262,12 +269,14 @@ content .contact .contact-container .contact__title {
     line-height: 24px;
 }
 
-.contact__info--phone .contact__info-icon , .contact__info--phone-title{
+.contact__info--phone .contact__info-icon, .contact__info--phone-title {
     transform: translateY(-24px);
 }
-.contact__info--phone-title{
+
+.contact__info--phone-title {
     margin-right: 5px;
 }
+
 .contact__info * {
     font-family: "Roboto";
     font-size: 16px;
@@ -277,34 +286,30 @@ content .contact .contact-container .contact__title {
     text-align: left;
 }
 
-
-
-
 .contact__form {
-    border: 2px solid transparent;
-    border-width: 10px;
+    border: 10px solid transparent;
     box-sizing: border-box;
+    border-radius: 20px;
+    background-clip: padding-box;
 }
+
 .contact__form.contact__form-valid {
-    border-color: #5DCC15;
-    border-width: 10px;
+    border: 10px solid;
+    border-image-source: linear-gradient(224.53deg, #3BD914 15.73%, #1F730B 72.71%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    background-clip: padding-box; /* Ensure background clips to rounded corners */
 }
+
 .contact__form.contact__form-invalid {
-    border-color: #C2000C;
-    border-width: 10px;
+    border: 10px solid;
+    border-image-source: linear-gradient(206.69deg, #EE4C56 4.74%, #990000 91.31%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    background-clip: padding-box; /* Ensure background clips to rounded corners */
 }
-.error-message {
+
+.invalid-placeholder::placeholder {
     color: #C2000C;
-    display: none;
-}
-.error-message.show {
-    display: block;
-}
-.send-valid {
-    background-color: #5DCC15;
-    color: white;
-}
-.send-invalid {
-    background-color: #C2000C;
-    color: white;
+    font-weight: bold;
 }
