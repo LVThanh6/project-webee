@@ -324,7 +324,17 @@ body{
 .club_card__info__office_phone{
     white-space: nowrap;
     height: 20px;
-    width: 106px;
+    width: 96px;
+}
+
+.club_details__image{
+    border-radius: 0px 0px 20px 0px;
+}
+
+.club_card__img{
+    width: 358px;
+    height: 250px;
+    border-radius: 20px;
 }
 
 

@@ -30,7 +30,7 @@ club_cards.forEach(club_card => {
     if (clubNumber) {
       // Cập nhật hình ảnh trong club_details__image
       const imageSrc = `../../assets/img/club/list_clubs/img (${clubNumber}).jpg`;
-      clubDetailsImage.setAttribute('src', imageSrc);
+      clubDetailsImage.setAttribute('src', imageSrc);  // Cập nhật hình ảnh
     }
 
     // Cập nhật tên và mô tả trong phần chi tiết
@@ -57,7 +57,6 @@ club_cards.forEach(club_card => {
 
 // Thêm sự kiện click cho phần chi tiết để ẩn khi nhấn ngoài vùng nội dung
 club_details.addEventListener('click', (event) => {
-
   // Nếu người dùng click vào vùng ngoài của club_details, ẩn nó
   if (event.target === club_details) {
     club_details.classList.remove('show'); // Ẩn phần chi tiết
