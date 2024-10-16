@@ -1,6 +1,21 @@
 // load header
 document.querySelector('header').innerHTML += `
             <div class="wrapper">
+            <div class="login-form" id="login-form" popover>
+        <div class="login-form__header">
+            <h2 class="login-form__title">Webee</h2>
+            <button type="button" class="login-form__close-btn" popovertarget ='login-form'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path d="M0.448954 8L0 7.55105L3.55105 4L0 0.448954L0.448954 0L4 3.55105L7.55105 0L8 0.448954L4.44895 4L8 7.55105L7.55105 8L4 4.44895L0.448954 8Z" fill="white"/>
+                </svg>
+                close
+            </button>
+        </div>
+        <input type="text" class="login-form__input" placeholder="Tên đăng nhập *" required>
+        <input type="password" class="login-form__input" placeholder="Mật khẩu" required>
+        <button type="submit" class="login-form__submit-btn">Đăng Nhập</button>
+        <div class="login-form__footer"></div>
+    </div>
             <div class="header--left">
                 <svg class = "btn_menu" width="41" height="26" viewBox="0 0 41 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 20C3.79565 20 4.55871 20.3161 5.12132 20.8787C5.68393 21.4413 6 22.2044 6 23C6 23.7956 5.68393 24.5587 5.12132 25.1213C4.55871 25.6839 3.79565 26 3 26C2.20435 26 1.44129 25.6839 0.87868 25.1213C0.316071 24.5587 0 23.7956 0 23C0 22.2044 0.316071 21.4413 0.87868 20.8787C1.44129 20.3161 2.20435 20 3 20ZM38.998 21C40.104 21 41 21.888 41 23C41 24.105 40.11 25 38.998 25H11.002C10.739 25.0008 10.4785 24.9496 10.2354 24.8494C9.99228 24.7492 9.77135 24.6019 9.58532 24.4161C9.39928 24.2303 9.25181 24.0095 9.15136 23.7665C9.05091 23.5234 8.99947 23.263 9 23C9 21.895 9.89 21 11.002 21H38.998ZM3 10C3.79565 10 4.55871 10.3161 5.12132 10.8787C5.68393 11.4413 6 12.2044 6 13C6 13.7956 5.68393 14.5587 5.12132 15.1213C4.55871 15.6839 3.79565 16 3 16C2.20435 16 1.44129 15.6839 0.87868 15.1213C0.316071 14.5587 0 13.7956 0 13C0 12.2044 0.316071 11.4413 0.87868 10.8787C1.44129 10.3161 2.20435 10 3 10ZM38.998 11C40.104 11 41 11.888 41 13C41 14.105 40.11 15 38.998 15H11.002C10.739 15.0008 10.4785 14.9496 10.2354 14.8494C9.99228 14.7492 9.77135 14.6019 9.58532 14.4161C9.39928 14.2303 9.25181 14.0095 9.15136 13.7665C9.05091 13.5234 8.99947 13.263 9 13C9 11.895 9.89 11 11.002 11H38.998ZM3 0C3.79565 0 4.55871 0.31607 5.12132 0.878679C5.68393 1.44129 6 2.20435 6 3C6 3.79565 5.68393 4.55871 5.12132 5.12132C4.55871 5.68393 3.79565 6 3 6C2.20435 6 1.44129 5.68393 0.87868 5.12132C0.316071 4.55871 0 3.79565 0 3C0 2.20435 0.316071 1.44129 0.87868 0.878679C1.44129 0.31607 2.20435 0 3 0ZM38.998 1C40.104 1 41 1.888 41 3C41 4.105 40.11 5 38.998 5H11.002C10.739 5.00079 10.4785 4.94961 10.2354 4.84941C9.99228 4.7492 9.77135 4.60195 9.58532 4.4161C9.39928 4.23025 9.25181 4.00947 9.15136 3.76645C9.05091 3.52343 8.99947 3.26296 9 3C9 1.895 9.89 1 11.002 1H38.998Z" fill="black"/>
@@ -17,14 +32,14 @@ document.querySelector('header').innerHTML += `
                     <li class="nav__link" id = "link3"><a href="../../pages/blogs/blogs.html">Blog</a></li>
                     <li class="nav__link" id = "link4"><a href="../../pages/contact/contact.html">Liên hệ</a></li>
                 </ul>
-                <div class="header__input">
+                <div class="header__input"  popovertarget ='login-form'>
                     <div class="header__searchbox">
                         <div class="searchbox__button">
-                            <button class="header__login" popovertarget = "sign-in__form">
+                            <button class="header__login" popovertarget ='login-form'>
                                 <img class="login__img1" src="../../assets/img/header/Property 1=Login_Default.png" alt="Login Button">
                             </button>
                         </div>
-                        <input class="searchbox__input" type="button" value="Đăng nhập">
+                        <input class="searchbox__input" type="button" value="Đăng nhập" popovertarget ='login-form'>
                     </div>
                 </div>
             </div>
@@ -38,10 +53,11 @@ document.querySelector('header').innerHTML += `
 
 // Change value on hover
 const searchboxInput = document.querySelector('.searchbox__input');
-searchboxInput.addEventListener('mouseover', () => {
+const header__input = document.querySelector('.header__input');
+header__input.addEventListener('mouseover', () => {
     searchboxInput.value = 'Đăng nhập ngay';
 });
-searchboxInput.addEventListener('mouseout', () => {
+header__input.addEventListener('mouseout', () => {
     searchboxInput.value = 'Đăng nhập';
 });
 
