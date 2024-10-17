@@ -21,6 +21,10 @@
     right: 20px;
     bottom: 20px;
 }
+.club_details__contet__chitiet2 div{
+    width: 100%;
+    margin: auto;
+}
 .square {
     width: 0;
     height: 0;
