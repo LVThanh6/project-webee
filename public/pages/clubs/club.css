@@ -386,8 +386,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    height: 60%;
-    width: 60%;
+    height: 500px;
+    width: 912px;
 }
 
 .club_details__image_and_contacte{
@@ -548,9 +548,6 @@ body{
         margin-top: -5%;
     }
     
-    .club_details_num{
-        height: 40%;
-    }
 
     .club_details__contact__inffo div label img {
         width: 12px;
