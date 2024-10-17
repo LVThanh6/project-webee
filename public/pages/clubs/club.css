@@ -17,6 +17,9 @@
     transform: rotate(45deg);
 }
 
+.club_details_num{
+    padding: 20px;
+}
 .square1 {
     left: -1px;
     border-color: #C2000C;
