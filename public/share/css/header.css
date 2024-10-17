@@ -260,6 +260,7 @@
 }
 
 .login-form {
+    overflow-x: hidden;
     width: 347px;
     position: fixed;
     transform: translate(-50%, -50%);
