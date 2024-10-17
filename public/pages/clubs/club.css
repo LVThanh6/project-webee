@@ -11,7 +11,7 @@
 .club_details__contet__chitiet2{
     width: calc(100% - 357px);
     height: calc(100% - 120px);
-    background-color: antiquewhite;
+    position: absolute;
     right: 20px;
     bottom: 20px;
 }
