@@ -482,6 +482,7 @@ body{
 
 .club_details__contect__name{
     color: #3B3B3B;
+    text-align: center;
 }
 
 .club_details__contect__chuclub{
@@ -491,6 +492,7 @@ body{
 .club_details__contet__chitiet{
     font-size: 12px;
     color: black;
+    text-align: center;
 }
 
 .pagination{
