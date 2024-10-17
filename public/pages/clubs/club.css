@@ -450,7 +450,7 @@ body{
 
 .club_details__contect{
     display: grid;
-    width: calc(100% - 240px);
+    width: calc(100% - 337px);
     position: absolute;
     top: 5%;
     left: 35%;
