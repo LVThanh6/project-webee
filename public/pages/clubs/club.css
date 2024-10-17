@@ -442,9 +442,11 @@ body{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
-    margin: 20px 0 0 10px;
+    margin-left:10px;
 }
-
+.club_details__contact__lienhe{
+    margin-top: 20px;
+}
 .club_details__contact__inffo div{
     display: flex;
     align-items: center;
