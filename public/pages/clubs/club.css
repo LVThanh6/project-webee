@@ -449,10 +449,13 @@ body{
 }
 
 .club_details__contect{
+    display: grid;
+    width: calc(100% - 240px);
     position: absolute;
     top: 5%;
     left: 35%;
     font-size: 24px;
+    justify-content: center;
 }
 
 .club_details__contect__name{
